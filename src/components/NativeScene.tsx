@@ -86,29 +86,38 @@ function NativeNode({node,actions,inherited={},selected,parentContext='normal',a
   }
   const input=node.id&&actions.inputBindings[node.id];
   if(node.tag==='p'){
+    const isPlaceholderMetric = ['148:3550', '148:3553', 'I148:3555;143:3249', 'I148:3558;143:3249', 'I501:8427;143:3249'].includes(node.id || '');
+    const placeholderStyle = isPlaceholderMetric ? {
+      color: isDark ? 'rgba(185, 200, 212, 0.52)' : 'rgba(83, 97, 110, 0.52)',
+      fontFamily: 'Manrope_500Medium',
+    } : {};
     const s=fontStyle({...style,...typeStyle,includeFontPadding:false});
     if(input){
       const unit = input.key === 'height' ? 'cm' : input.key === 'weight' ? 'kg' : null;
       const inputValue = actions.fields[input.key] ?? input.initial ?? '';
       const numericValue = unit ? inputValue.replace(/[^0-9.,]/g, '') : inputValue;
+      const placeholderColor = isPlaceholderMetric
+        ? (isDark ? 'rgba(185, 200, 212, 0.52)' : 'rgba(83, 97, 110, 0.52)')
+        : (typeStyle.color || colors.muted);
       // The unit is a separate label: the numeric keyboard can never remove it.
       const field = <TextInput testID={'input-'+input.key} accessibilityLabel={fieldLabels[input.key]||'Nhập giá trị'}
         value={numericValue} placeholder={unit ? (unit === 'cm' ? '178' : '76') : input.placeholder}
-        placeholderTextColor={typeStyle.color||colors.muted} secureTextEntry={input.password} keyboardAppearance={isDark?'dark':'light'} selectionColor={colors.accent}
+        placeholderTextColor={placeholderColor} secureTextEntry={input.password} keyboardAppearance={isDark?'dark':'light'} selectionColor={colors.accent}
         autoCapitalize="none" autoCorrect={false} keyboardType={input.numeric?'decimal-pad':input.key==='email'?'email-address':'default'}
         returnKeyType={input.key==='chat'?'send':'done'}
         onChangeText={v=>actions.onField(input.key,unit ? v.replace(/[^0-9.,]/g,'') : v)}
         onSubmitEditing={()=>actions.onSubmit(input.key)}
-        style={[s,{padding:0,margin:0,minHeight:own.lineHeight||20,borderWidth:0,outlineWidth:0},unit?{width:undefined,flexGrow:0,flexShrink:1,minWidth:48}:{}] as any}/>;
+        style={[s,{padding:0,margin:0,minHeight:own.lineHeight||20,borderWidth:0,outlineWidth:0},unit?{width:undefined,flexGrow:0,flexShrink:1,minWidth:48}:{}, isPlaceholderMetric ? placeholderStyle : {}] as any}/>;
       if(!unit)return field;
       return <View style={{flexDirection:'row',alignItems:'baseline',width:'100%',minHeight:own.lineHeight||20}}>
         {field}
-        <Text accessibilityLabel={'Đơn vị '+unit} style={[s,{width:undefined,marginLeft:3,flexShrink:0}]}>{unit}</Text>
+        <Text accessibilityLabel={'Đơn vị '+unit} style={[s,{width:undefined,marginLeft:3,flexShrink:0}, isPlaceholderMetric ? placeholderStyle : {}]}>{unit}</Text>
       </View>;
     }
     const content=actions.text(node,node.children.filter(c=>typeof c==='string').join(''));
     const onLongPress=(own.fontSize||0)>=20||/EcoFit|^Eco$|^Fit\.$/.test(content)?actions.onDirectory:undefined;
-    return <DesignLabel animated={Boolean(motion)} testID={node.id} style={motion?[s,movingStyle]:s} onLongPress={onLongPress}>{content}</DesignLabel>;
+    const finalStyle = isPlaceholderMetric ? [s, placeholderStyle] : s;
+    return <DesignLabel animated={Boolean(motion)} testID={node.id} style={motion?[finalStyle,movingStyle]:finalStyle} onLongPress={onLongPress}>{content}</DesignLabel>;
   }
   const changed=node.id?actions.choices[node.id]:undefined;
   const isChoice=node.name?.startsWith('Choose');

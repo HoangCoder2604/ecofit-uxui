@@ -963,7 +963,7 @@ function Frontend() {
         if (node.id === "244:4495") return journalLoaded ? `Còn lại ${Math.round(remaining).toLocaleString("vi-VN")} kcal` : "Đang tải nhật ký...";
         if (node.id === "244:4499") return journalLoaded ? `${Math.round(energyTarget > 0 ? 100 * totals.calories/energyTarget : 0)}%` : "—";
         if (node.id === "244:4551") return journalLoaded ? `${(drankMl/1000).toLocaleString("vi-VN",{maximumFractionDigits:2})} L` : "—";
-        if (node.id === "244:4466") return `Chào ${displayName || authUser?.email?.split("@")[0] || "bạn"},`;
+        if (node.id === "244:4466") return `Chào ${displayName || authUser?.email?.split("@")[0] || "bạn"}`;
         if (metrics) {
           if (node.id === "244:4494") return `/ ${metrics.targetKcal.toLocaleString("vi-VN")} kcal`;
           if (node.id === "244:4495") return "Lượng đã ăn: dữ liệu minh họa";
