@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "EcoFit",
+    "slug": "ecofit-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.ecofit.mobile" },
+    "android": { "package": "com.ecofit.mobile" },
+    "web": { "bundler": "metro" },
+    "plugins": []
+  }
+}

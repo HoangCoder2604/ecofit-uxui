@@ -1,0 +1,366 @@
+{
+  "source": {
+    "file": "QCszU0931h1RJ7EvUqfIok",
+    "collection": "EcoFit V4 / Spectrum",
+    "modes": [
+      "Light",
+      "Dark"
+    ]
+  },
+  "tokens": [
+    {
+      "id": "VariableID:250:4634",
+      "name": "Category/Home/Tint",
+      "light": "#eff7ec",
+      "dark": "#18382c"
+    },
+    {
+      "id": "VariableID:250:4637",
+      "name": "Category/Home/Alt",
+      "light": "#fff0cb",
+      "dark": "#3e3523"
+    },
+    {
+      "id": "VariableID:250:4640",
+      "name": "Category/Home/Accent",
+      "light": "#165b43",
+      "dark": "#a4e2bc"
+    },
+    {
+      "id": "VariableID:250:4643",
+      "name": "Category/Home/Strong",
+      "light": "#145b46",
+      "dark": "#145b46"
+    },
+    {
+      "id": "VariableID:250:4645",
+      "name": "Category/Home/Glow",
+      "light": "#26765d",
+      "dark": "#26765d"
+    },
+    {
+      "id": "VariableID:250:4647",
+      "name": "Category/Nutrition/Tint",
+      "light": "#fff5ea",
+      "dark": "#3d2c23"
+    },
+    {
+      "id": "VariableID:250:4650",
+      "name": "Category/Nutrition/Alt",
+      "light": "#ffe2d6",
+      "dark": "#442b29"
+    },
+    {
+      "id": "VariableID:250:4653",
+      "name": "Category/Nutrition/Accent",
+      "light": "#9c4025",
+      "dark": "#ffc79c"
+    },
+    {
+      "id": "VariableID:250:4656",
+      "name": "Category/Nutrition/Strong",
+      "light": "#9c4025",
+      "dark": "#9c4025"
+    },
+    {
+      "id": "VariableID:250:4657",
+      "name": "Category/Nutrition/Glow",
+      "light": "#b45631",
+      "dark": "#b45631"
+    },
+    {
+      "id": "VariableID:250:4659",
+      "name": "Category/Workout/Tint",
+      "light": "#f4f1fc",
+      "dark": "#2e284a"
+    },
+    {
+      "id": "VariableID:250:4662",
+      "name": "Category/Workout/Alt",
+      "light": "#e2ddfb",
+      "dark": "#352c50"
+    },
+    {
+      "id": "VariableID:250:4665",
+      "name": "Category/Workout/Accent",
+      "light": "#5145ac",
+      "dark": "#c9bcff"
+    },
+    {
+      "id": "VariableID:250:4668",
+      "name": "Category/Workout/Strong",
+      "light": "#5145ac",
+      "dark": "#5145ac"
+    },
+    {
+      "id": "VariableID:250:4669",
+      "name": "Category/Workout/Glow",
+      "light": "#7055b8",
+      "dark": "#7055b8"
+    },
+    {
+      "id": "VariableID:250:4671",
+      "name": "Category/Progress/Tint",
+      "light": "#eef4fd",
+      "dark": "#1c3048"
+    },
+    {
+      "id": "VariableID:250:4674",
+      "name": "Category/Progress/Alt",
+      "light": "#d8ecfa",
+      "dark": "#203c4b"
+    },
+    {
+      "id": "VariableID:250:4677",
+      "name": "Category/Progress/Accent",
+      "light": "#2556a4",
+      "dark": "#afcfff"
+    },
+    {
+      "id": "VariableID:250:4680",
+      "name": "Category/Progress/Strong",
+      "light": "#2556a4",
+      "dark": "#2556a4"
+    },
+    {
+      "id": "VariableID:250:4681",
+      "name": "Category/Progress/Glow",
+      "light": "#3d6db0",
+      "dark": "#3d6db0"
+    },
+    {
+      "id": "VariableID:250:4683",
+      "name": "Category/Sleep/Tint",
+      "light": "#f4f0fa",
+      "dark": "#2c2640"
+    },
+    {
+      "id": "VariableID:250:4686",
+      "name": "Category/Sleep/Alt",
+      "light": "#e4ddf8",
+      "dark": "#342d4a"
+    },
+    {
+      "id": "VariableID:250:4689",
+      "name": "Category/Sleep/Accent",
+      "light": "#604794",
+      "dark": "#d2bff7"
+    },
+    {
+      "id": "VariableID:250:4692",
+      "name": "Category/Sleep/Strong",
+      "light": "#58428d",
+      "dark": "#58428d"
+    },
+    {
+      "id": "VariableID:250:4694",
+      "name": "Category/Sleep/Glow",
+      "light": "#785daa",
+      "dark": "#785daa"
+    },
+    {
+      "id": "VariableID:250:4696",
+      "name": "Category/Coach/Tint",
+      "light": "#ebf7f1",
+      "dark": "#183b35"
+    },
+    {
+      "id": "VariableID:250:4699",
+      "name": "Category/Coach/Alt",
+      "light": "#ddeff8",
+      "dark": "#203946"
+    },
+    {
+      "id": "VariableID:250:4702",
+      "name": "Category/Coach/Accent",
+      "light": "#086c72",
+      "dark": "#a4e3db"
+    },
+    {
+      "id": "VariableID:250:4705",
+      "name": "Category/Coach/Strong",
+      "light": "#086c72",
+      "dark": "#086c72"
+    },
+    {
+      "id": "VariableID:250:4706",
+      "name": "Category/Coach/Glow",
+      "light": "#1d7b73",
+      "dark": "#1d7b73"
+    },
+    {
+      "id": "VariableID:250:4708",
+      "name": "Category/Community/Tint",
+      "light": "#fcf0f4",
+      "dark": "#422735"
+    },
+    {
+      "id": "VariableID:250:4711",
+      "name": "Category/Community/Alt",
+      "light": "#fff0d9",
+      "dark": "#3f3327"
+    },
+    {
+      "id": "VariableID:250:4714",
+      "name": "Category/Community/Accent",
+      "light": "#9d3764",
+      "dark": "#ffbed7"
+    },
+    {
+      "id": "VariableID:250:4717",
+      "name": "Category/Community/Strong",
+      "light": "#9d3764",
+      "dark": "#9d3764"
+    },
+    {
+      "id": "VariableID:250:4718",
+      "name": "Category/Community/Glow",
+      "light": "#b84f73",
+      "dark": "#b84f73"
+    },
+    {
+      "id": "VariableID:250:4720",
+      "name": "Category/Profile/Tint",
+      "light": "#edf6f6",
+      "dark": "#19383f"
+    },
+    {
+      "id": "VariableID:250:4723",
+      "name": "Category/Profile/Alt",
+      "light": "#e6edf9",
+      "dark": "#283449"
+    },
+    {
+      "id": "VariableID:250:4726",
+      "name": "Category/Profile/Accent",
+      "light": "#145f70",
+      "dark": "#a6dbe5"
+    },
+    {
+      "id": "VariableID:250:4729",
+      "name": "Category/Profile/Strong",
+      "light": "#145f70",
+      "dark": "#145f70"
+    },
+    {
+      "id": "VariableID:250:4730",
+      "name": "Category/Profile/Glow",
+      "light": "#287888",
+      "dark": "#287888"
+    },
+    {
+      "id": "VariableID:266:4670",
+      "name": "Feedback/Error",
+      "light": "#b63f41",
+      "dark": "#ffb4b4"
+    },
+    {
+      "id": "VariableID:300:4684",
+      "name": "Action/Primary/Background",
+      "light": "#165b43",
+      "dark": "#9fe1ba"
+    },
+    {
+      "id": "VariableID:300:4686",
+      "name": "Action/Primary/Foreground",
+      "light": "#ffffff",
+      "dark": "#123d2d"
+    },
+    {
+      "id": "VariableID:300:4689",
+      "name": "Action/Primary/Hover",
+      "light": "#124c37",
+      "dark": "#afeaca"
+    },
+    {
+      "id": "VariableID:300:4692",
+      "name": "Action/Primary/Pressed",
+      "light": "#0d3c2b",
+      "dark": "#85cea4"
+    },
+    {
+      "id": "VariableID:300:4695",
+      "name": "Action/Secondary/Background",
+      "light": "#ebf3ef",
+      "dark": "#233d35"
+    },
+    {
+      "id": "VariableID:300:4698",
+      "name": "Action/Secondary/Foreground",
+      "light": "#165b43",
+      "dark": "#c4ebd5"
+    },
+    {
+      "id": "VariableID:300:4700",
+      "name": "Action/Secondary/Hover",
+      "light": "#dfece4",
+      "dark": "#29483e"
+    },
+    {
+      "id": "VariableID:300:4703",
+      "name": "Action/Secondary/Pressed",
+      "light": "#cbdfd2",
+      "dark": "#315447"
+    },
+    {
+      "id": "VariableID:300:4706",
+      "name": "Surface/Muted",
+      "light": "#eef2f0",
+      "dark": "#24382e"
+    },
+    {
+      "id": "VariableID:300:4709",
+      "name": "Control/Border",
+      "light": "#718278",
+      "dark": "#829a8d"
+    },
+    {
+      "id": "VariableID:300:4712",
+      "name": "Feedback/Success",
+      "light": "#216442",
+      "dark": "#a4e2bc"
+    },
+    {
+      "id": "VariableID:300:4714",
+      "name": "Feedback/SuccessTint",
+      "light": "#eaf5ed",
+      "dark": "#213b2c"
+    },
+    {
+      "id": "VariableID:300:4717",
+      "name": "Feedback/Warning",
+      "light": "#87520a",
+      "dark": "#f3ce87"
+    },
+    {
+      "id": "VariableID:300:4720",
+      "name": "Feedback/WarningTint",
+      "light": "#fff3db",
+      "dark": "#3d3424"
+    },
+    {
+      "id": "VariableID:300:4723",
+      "name": "Feedback/Info",
+      "light": "#2556a4",
+      "dark": "#afcfff"
+    },
+    {
+      "id": "VariableID:300:4724",
+      "name": "Feedback/InfoTint",
+      "light": "#eaf1fc",
+      "dark": "#20344c"
+    },
+    {
+      "id": "VariableID:300:4727",
+      "name": "Text/OnGold",
+      "light": "#123d2d",
+      "dark": "#123d2d"
+    },
+    {
+      "id": "VariableID:311:4684",
+      "name": "Feedback/ErrorTint",
+      "light": "#fdedee",
+      "dark": "#43282a"
+    }
+  ]
+}
